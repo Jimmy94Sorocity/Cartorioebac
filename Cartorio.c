@@ -102,6 +102,9 @@ int deletar() // Função para deletar os nomes
 	
 	remove(cpf); // comando para a remoção dos dados
 	
+	printf("O usuário foi deletado com sucesso! \n"); // Mensagem da remoção do usuário
+	system("pause");
+	
 	FILE *file; // criação do arquivo
 	file = fopen(cpf, "r"); 
 	
@@ -125,7 +128,7 @@ int main()
 	
 	scanf("%s", senhadigitada); // Armazenando a escolha do usuário
 	
-	comparacao = strcmp(senhadigitada, "admin"); 
+	comparacao = strcmp(senhadigitada, "admin"); // Comparação da string salva senhadigitada
 	
 	if(comparacao == 0)
 	{
